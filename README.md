@@ -46,7 +46,7 @@ The project follows a "bridge" architecture, where a Python script running insid
 ### Key Components
 - **`osc_io_browserSource.py`**: The primary OBS script that bridges OSC to Browser Source events.
 - **`osc_monitor.html`**: A styled visualization for received OSC data. It also forwards events to a Broadcast Channel.
-- **`broadcast_listener.html`**: A utility for monitoring any Broadcast Channel from a standard web browser.
+- **`osc_listener.html`**: A utility for monitoring any Broadcast Channel from a standard web browser.
 
 ### Broadcast Channel API
 To facilitate communication between OBS Browser Sources and external browser windows, we use the `BroadcastChannel` API. This allows you to open a dashboard in a separate browser tab that receives real-time updates from OBS without complex networking.

@@ -23,9 +23,9 @@ The script checks for the ``event`` query parameter. It sets up an event listene
 3. Adds the message to a history queue.
 4. Posts the data to a ``BroadcastChannel`` with the same name as the event.
 
-Broadcast Listener
-------------------
-**File:** ``broadcast_listener.html``
+OSC Listener
+------------
+**File:** ``osc_listener.html``
 
 **Purpose:**
 A generic listener page that connects to a specified ``BroadcastChannel`` and logs all incoming messages. This is useful for debugging or for displaying data on a separate machine or screen (if the browser context allows).
@@ -34,7 +34,7 @@ A generic listener page that connects to a specified ``BroadcastChannel`` and lo
 Open this file in a web browser. Append the ``channel`` query parameter to specify the channel to listen to.
 
 Example URL:
-``file:///path/to/broadcast_listener.html?channel=my_osc_event``
+``file:///path/to/osc_listener.html?channel=my_osc_event``
 
 **Developer Commentary:**
 Uses the ``BroadcastChannel`` API.

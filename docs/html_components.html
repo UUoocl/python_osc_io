@@ -51,15 +51,15 @@ The script checks for the <code class="docutils literal notranslate"><span class
 3. Adds the message to a history queue.
 4. Posts the data to a <code class="docutils literal notranslate"><span class="pre">BroadcastChannel</span></code> with the same name as the event.</p>
 </section>
-<section id="broadcast-listener">
-<h2>Broadcast Listener<a class="headerlink" href="#broadcast-listener" title="Link to this heading">¶</a></h2>
-<p><strong>File:</strong> <code class="docutils literal notranslate"><span class="pre">broadcast_listener.html</span></code></p>
+<section id="osc-listener">
+<h2>OSC Listener<a class="headerlink" href="#osc-listener" title="Link to this heading">¶</a></h2>
+<p><strong>File:</strong> <code class="docutils literal notranslate"><span class="pre">osc_listener.html</span></code></p>
 <p><strong>Purpose:</strong>
 A generic listener page that connects to a specified <code class="docutils literal notranslate"><span class="pre">BroadcastChannel</span></code> and logs all incoming messages. This is useful for debugging or for displaying data on a separate machine or screen (if the browser context allows).</p>
 <p><strong>Usage:</strong>
 Open this file in a web browser. Append the <code class="docutils literal notranslate"><span class="pre">channel</span></code> query parameter to specify the channel to listen to.</p>
 <p>Example URL:
-<code class="docutils literal notranslate"><span class="pre">file:///path/to/broadcast_listener.html?channel=my_osc_event</span></code></p>
+<code class="docutils literal notranslate"><span class="pre">file:///path/to/osc_listener.html?channel=my_osc_event</span></code></p>
 <p><strong>Developer Commentary:</strong>
 Uses the <code class="docutils literal notranslate"><span class="pre">BroadcastChannel</span></code> API.
 - Reads <code class="docutils literal notranslate"><span class="pre">?channel=NAME</span></code> from URL.
@@ -122,7 +122,7 @@ Open in a separate browser window while <code class="docutils literal notranslat
 <li class="toctree-l1"><a class="reference internal" href="python_modules.html">Python Modules</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">HTML Components</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#osc-monitor">OSC Monitor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#broadcast-listener">Broadcast Listener</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#osc-listener">OSC Listener</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#keyboard-monitor">Keyboard Monitor</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#keyboard-listener">Keyboard Listener</a></li>
 </ul>

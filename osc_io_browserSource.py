@@ -49,7 +49,7 @@ def script_load(settings):
     print("osc server started on script load")
 
     #load client list for OSC functions
-    clients = []
+    #clients = []
     for i in range(obs.obs_data_get_int(settings, "number_of_clients")):
         client_ip = obs.obs_data_get_string(settings, f"client_ip_{i}")
         client_port = obs.obs_data_get_int(settings, f"client_port_{i}")
@@ -261,7 +261,7 @@ def update_browser(address, *args):
     json_string = json.dumps(data)
 
     # Find target client where the OSC address matches
-    target_client = next((client for client in clients if address.startswith(client["osc_address"])), None)
+    target_client = next((client for client in clients if args[0].startswith(client["osc_address"])), None)
     
     if target_client:
         try:

@@ -23,6 +23,7 @@ release = '1.0'
 extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.viewcode',
+    'sphinx.ext.githubpages',
 ]
 
 autodoc_mock_imports = ["obspython", "pythonosc"]

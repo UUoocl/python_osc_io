@@ -32,9 +32,14 @@
             
   <h1>Source code for osc_io_browserSource</h1><div class="highlight"><pre>
 <span></span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">python-osc </span>
+<span class="sd">OSC IO: Browser Source Integration</span>
+<span class="sd">==================================</span>
 
-<span class="sd">co-created with google ai studio</span>
+<span class="sd">This script provides an OSC (Open Sound Control) interface for OBS Studio,</span>
+<span class="sd">allowing incoming OSC messages to trigger JavaScript events within Browser Sources.</span>
+<span class="sd">It also supports sending OSC messages when a Text Source is updated.</span>
+
+<span class="sd">Co-created with Google AI Studio.</span>
 <span class="sd">&quot;&quot;&quot;</span>
 
 <span class="kn">import</span><span class="w"> </span><span class="nn">obspython</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">obs</span>
@@ -73,6 +78,9 @@
 <div class="viewcode-block" id="script_description">
 <a class="viewcode-back" href="../python_modules.html#osc_io_browserSource.script_description">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">script_description</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Returns the description displayed in the OBS scripts window.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="s2">&quot;OSC IO: Text Source (Send) &amp; Browser Source (Receive)&quot;</span></div>
 
 
@@ -80,6 +88,9 @@
 <div class="viewcode-block" id="script_load">
 <a class="viewcode-back" href="../python_modules.html#osc_io_browserSource.script_load">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">script_load</span><span class="p">(</span><span class="n">settings</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Initializes the script, starts the OSC server, and sets up client data.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">global</span> <span class="n">script_settings</span><span class="p">,</span> <span class="n">clients</span>
 
     <span class="n">script_settings</span> <span class="o">=</span> <span class="n">settings</span>

@@ -38,35 +38,8 @@ Example URL:
 
 **Developer Commentary:**
 Uses the ``BroadcastChannel`` API.
+
 - Reads ``?channel=NAME`` from URL.
 - Instantiates ``new BroadcastChannel(NAME)``.
 - Logs ``onmessage`` events to a scrolling console-like display.
 
-Keyboard Monitor
-----------------
-**File:** ``keyboard_monitor.html``
-
-**Purpose:**
-Visualizes keyboard input events. While primarily for keyboard data, it serves as the template and precursor for the OSC monitor.
-
-**Usage:**
-Add as a Browser Source. It listens for ``keyboard_event`` (typically dispatched by a script or test harness).
-
-**Developer Commentary:**
-- Maintains a visual history of key presses.
-- Broadcasts received keys to the ``keyboard_event`` channel.
-- Uses CSS animations for visual feedback ("flashing" cards).
-
-Keyboard Listener
------------------
-**File:** ``keyboard_listener.html``
-
-**Purpose:**
-Demonstrates how external applications or separate browser windows can consume the keyboard events broadcast by the ``keyboard_monitor.html``.
-
-**Usage:**
-Open in a separate browser window while ``keyboard_monitor.html`` is active.
-
-**Developer Commentary:**
-- Subscribes specifically to the ``keyboard_event`` channel.
-- Logs received key data with timestamps.

@@ -1,7 +1,12 @@
 """
-python-osc 
+OSC IO: Text Source Integration
+===============================
 
-co-created with google ai studio
+This script provides an OSC (Open Sound Control) interface for OBS Studio,
+focusing on updating OBS Text Sources with received OSC data. It also supports
+sending OSC messages when a mapped Text Source is updated.
+
+Co-created with Google AI Studio.
 """
 
 import obspython as obs
@@ -35,10 +40,16 @@ def script_defaults(settings):
 
 
 def script_description():
+    """
+    Returns the description displayed in the OBS scripts window.
+    """
     return "OSC IO"
 
 
 def script_load(settings):
+    """
+    Initializes the script, starts the OSC server, and sets up client data.
+    """
     global script_settings, clients
 
     script_settings = settings

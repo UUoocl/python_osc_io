@@ -37,8 +37,13 @@
 <h1>Python Modules<a class="headerlink" href="#python-modules" title="Link to this heading">¶</a></h1>
 <section id="module-osc_io_browserSource">
 <span id="osc-io-browser-source"></span><h2>OSC IO Browser Source<a class="headerlink" href="#module-osc_io_browserSource" title="Link to this heading">¶</a></h2>
-<p>python-osc</p>
-<p>co-created with google ai studio</p>
+<section id="osc-io-browser-source-integration">
+<h3>OSC IO: Browser Source Integration<a class="headerlink" href="#osc-io-browser-source-integration" title="Link to this heading">¶</a></h3>
+<p>This script provides an OSC (Open Sound Control) interface for OBS Studio,
+allowing incoming OSC messages to trigger JavaScript events within Browser Sources.
+It also supports sending OSC messages when a Text Source is updated.</p>
+<p>Co-created with Google AI Studio.</p>
+</section>
 <dl class="py function">
 <dt class="sig sig-object py" id="osc_io_browserSource.add_client_properties">
 <span class="sig-prename descclassname"><span class="pre">osc_io_browserSource.</span></span><span class="sig-name descname"><span class="pre">add_client_properties</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">props</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">index</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/osc_io_browserSource.html#add_client_properties"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#osc_io_browserSource.add_client_properties" title="Link to this definition">¶</a></dt>
@@ -62,12 +67,14 @@
 <dl class="py function">
 <dt class="sig sig-object py" id="osc_io_browserSource.script_description">
 <span class="sig-prename descclassname"><span class="pre">osc_io_browserSource.</span></span><span class="sig-name descname"><span class="pre">script_description</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/osc_io_browserSource.html#script_description"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#osc_io_browserSource.script_description" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Returns the description displayed in the OBS scripts window.</p>
+</dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="osc_io_browserSource.script_load">
 <span class="sig-prename descclassname"><span class="pre">osc_io_browserSource.</span></span><span class="sig-name descname"><span class="pre">script_load</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">settings</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/osc_io_browserSource.html#script_load"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#osc_io_browserSource.script_load" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Initializes the script, starts the OSC server, and sets up client data.</p>
+</dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="osc_io_browserSource.script_properties">
@@ -122,8 +129,13 @@ message format
 </section>
 <section id="module-osc_io_textSource">
 <span id="osc-io-text-source"></span><h2>OSC IO Text Source<a class="headerlink" href="#module-osc_io_textSource" title="Link to this heading">¶</a></h2>
-<p>python-osc</p>
-<p>co-created with google ai studio</p>
+<section id="osc-io-text-source-integration">
+<h3>OSC IO: Text Source Integration<a class="headerlink" href="#osc-io-text-source-integration" title="Link to this heading">¶</a></h3>
+<p>This script provides an OSC (Open Sound Control) interface for OBS Studio,
+focusing on updating OBS Text Sources with received OSC data. It also supports
+sending OSC messages when a mapped Text Source is updated.</p>
+<p>Co-created with Google AI Studio.</p>
+</section>
 <dl class="py function">
 <dt class="sig sig-object py" id="osc_io_textSource.add_client_properties">
 <span class="sig-prename descclassname"><span class="pre">osc_io_textSource.</span></span><span class="sig-name descname"><span class="pre">add_client_properties</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">props</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">index</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/osc_io_textSource.html#add_client_properties"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#osc_io_textSource.add_client_properties" title="Link to this definition">¶</a></dt>
@@ -142,12 +154,14 @@ message format
 <dl class="py function">
 <dt class="sig sig-object py" id="osc_io_textSource.script_description">
 <span class="sig-prename descclassname"><span class="pre">osc_io_textSource.</span></span><span class="sig-name descname"><span class="pre">script_description</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/osc_io_textSource.html#script_description"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#osc_io_textSource.script_description" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Returns the description displayed in the OBS scripts window.</p>
+</dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="osc_io_textSource.script_load">
 <span class="sig-prename descclassname"><span class="pre">osc_io_textSource.</span></span><span class="sig-name descname"><span class="pre">script_load</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">settings</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/osc_io_textSource.html#script_load"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#osc_io_textSource.script_load" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Initializes the script, starts the OSC server, and sets up client data.</p>
+</dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="osc_io_textSource.script_properties">

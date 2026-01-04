@@ -61,33 +61,12 @@ Open this file in a web browser. Append the <code class="docutils literal notran
 <p>Example URL:
 <code class="docutils literal notranslate"><span class="pre">file:///path/to/osc_listener.html?channel=my_osc_event</span></code></p>
 <p><strong>Developer Commentary:</strong>
-Uses the <code class="docutils literal notranslate"><span class="pre">BroadcastChannel</span></code> API.
-- Reads <code class="docutils literal notranslate"><span class="pre">?channel=NAME</span></code> from URL.
-- Instantiates <code class="docutils literal notranslate"><span class="pre">new</span> <span class="pre">BroadcastChannel(NAME)</span></code>.
-- Logs <code class="docutils literal notranslate"><span class="pre">onmessage</span></code> events to a scrolling console-like display.</p>
-</section>
-<section id="keyboard-monitor">
-<h2>Keyboard Monitor<a class="headerlink" href="#keyboard-monitor" title="Link to this heading">¶</a></h2>
-<p><strong>File:</strong> <code class="docutils literal notranslate"><span class="pre">keyboard_monitor.html</span></code></p>
-<p><strong>Purpose:</strong>
-Visualizes keyboard input events. While primarily for keyboard data, it serves as the template and precursor for the OSC monitor.</p>
-<p><strong>Usage:</strong>
-Add as a Browser Source. It listens for <code class="docutils literal notranslate"><span class="pre">keyboard_event</span></code> (typically dispatched by a script or test harness).</p>
-<p><strong>Developer Commentary:</strong>
-- Maintains a visual history of key presses.
-- Broadcasts received keys to the <code class="docutils literal notranslate"><span class="pre">keyboard_event</span></code> channel.
-- Uses CSS animations for visual feedback (“flashing” cards).</p>
-</section>
-<section id="keyboard-listener">
-<h2>Keyboard Listener<a class="headerlink" href="#keyboard-listener" title="Link to this heading">¶</a></h2>
-<p><strong>File:</strong> <code class="docutils literal notranslate"><span class="pre">keyboard_listener.html</span></code></p>
-<p><strong>Purpose:</strong>
-Demonstrates how external applications or separate browser windows can consume the keyboard events broadcast by the <code class="docutils literal notranslate"><span class="pre">keyboard_monitor.html</span></code>.</p>
-<p><strong>Usage:</strong>
-Open in a separate browser window while <code class="docutils literal notranslate"><span class="pre">keyboard_monitor.html</span></code> is active.</p>
-<p><strong>Developer Commentary:</strong>
-- Subscribes specifically to the <code class="docutils literal notranslate"><span class="pre">keyboard_event</span></code> channel.
-- Logs received key data with timestamps.</p>
+Uses the <code class="docutils literal notranslate"><span class="pre">BroadcastChannel</span></code> API.</p>
+<ul class="simple">
+<li><p>Reads <code class="docutils literal notranslate"><span class="pre">?channel=NAME</span></code> from URL.</p></li>
+<li><p>Instantiates <code class="docutils literal notranslate"><span class="pre">new</span> <span class="pre">BroadcastChannel(NAME)</span></code>.</p></li>
+<li><p>Logs <code class="docutils literal notranslate"><span class="pre">onmessage</span></code> events to a scrolling console-like display.</p></li>
+</ul>
 </section>
 </section>
 
@@ -123,8 +102,6 @@ Open in a separate browser window while <code class="docutils literal notranslat
 <li class="toctree-l1 current"><a class="current reference internal" href="#">HTML Components</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#osc-monitor">OSC Monitor</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#osc-listener">OSC Listener</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#keyboard-monitor">Keyboard Monitor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#keyboard-listener">Keyboard Listener</a></li>
 </ul>
 </li>
 </ul>
